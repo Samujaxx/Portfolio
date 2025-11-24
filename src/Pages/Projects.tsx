@@ -22,7 +22,7 @@ const projects: Project[] = [
     title: "Cassper",
     description:
       "Spyware that is made collaboratively for educational purposes and 1st year ADCS Coding project to demonstrate the risks of mobile malware.",
-    image: cassperImage,                      // 👈 USE IMPORT, NOT 'src/...'
+    image: cassperImage,                      
     tags: ["Python", "malware", "Security", "research"],
     githubUrl: "https://github.com/LeonBoussen/Cassper",
   },
@@ -31,7 +31,7 @@ const projects: Project[] = [
     title: "GifJet",
     description:
       "A gif widget on your desktop to make your workspace more lively and fun. Made with Python and monster energy.",
-    image: gifjetImage,                       // 👈 USE IMPORT, NOT 'src/...'
+    image: gifjetImage,                      
     tags: ["Python", "Widget", "Passion Project"],
     githubUrl: "https://github.com/Samujaxx/GIFJet",
   },

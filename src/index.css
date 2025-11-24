@@ -24,7 +24,7 @@ All colors MUST be HSL.
     --secondary-foreground: 0 0% 98%;
 
     --muted: 0 0% 12%;
-    --muted-foreground: 0 0% 60%;
+    --muted-foreground: 0 0% 95%;
 
     --accent: 0 100% 45%;
     --accent-foreground: 0 0% 98%;
@@ -38,8 +38,7 @@ All colors MUST be HSL.
 
     --radius: 0.75rem;
 
-    --gradient-hero: linear-gradient(135deg, hsl(0 84% 55% / 0.15), hsl(0 100% 20% / 0.05));
-    --gradient-card: linear-gradient(135deg, hsl(0 0% 10%), hsl(0 0% 6%));
+    --gradient-hero: linear-gradient(135deg,hsl(0 60% 12%),hsl(0 72% 4%));
     --shadow-glow: 0 0 40px hsl(0 84% 55% / 0.25);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -139,10 +138,15 @@ All colors MUST be HSL.
 @layer utilities {
   .gradient-hero {
     background: var(--gradient-hero);
+    position: relative;
+    z-index: 2;
   }
   
   .gradient-card {
-    background: var(--gradient-card);
+    background-color: hsl(var(--card));   
+    opacity: 1;                           
+    position: relative;
+    z-index: 2;   
   }
 
   .shadow-glow {

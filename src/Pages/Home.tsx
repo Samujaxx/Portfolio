@@ -31,7 +31,7 @@ const Home = () => {
 
             <p className="text-lg text-muted-foreground leading-relaxed mb-10 max-w-2xl">
               Protecting digital assets and hunting vulnerabilities. Passionate about social engineering,
-              red teaming, and making the internet a safer place (one exploit at a time :D).
+              red teaming, and making the internet a safer place (one exploit at a time).
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -72,7 +72,7 @@ const Home = () => {
                   rel="noopener noreferrer"
                 >
                   <Gift className="mr-2" size={20} />
-                  Surprise 🎁
+                  Surprise
                 </a>
               </Button>
             </div>
