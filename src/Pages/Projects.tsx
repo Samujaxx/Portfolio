@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
+import Starfield from "../components/Starfield";
 
 const projects = [
   {
@@ -24,6 +25,7 @@ const projects = [
 const Projects = () => {
   return (
     <div className="min-h-screen pt-20">
+      <Starfield />
       <section className="container mx-auto px-6 py-16">
         <div className="max-w-6xl mx-auto">
           <div className="mb-12">

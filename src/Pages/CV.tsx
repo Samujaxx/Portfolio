@@ -1,9 +1,22 @@
 import { Button } from "@/components/ui/button";
 import { Download, Briefcase, GraduationCap, Award } from "lucide-react";
+import { useEffect } from "react";
+import Starfield from "../components/Starfield";
+
+
 
 const CV = () => {
+
+   useEffect(() => {
+    console.log("I'm pretty sure I said there are no vulnerabilities. Stop inspecting, Sherlock 🕵️‍♂️");
+  }, []);
+
   return (
-    <div className="min-h-screen pt-20">
+    <div className="min-h-screen pt-20 relative overflow-hidden">
+    <Starfield />
+    <span style={{position: "absolute", left: "-9999px", fontSize: "0px", opacity: 0, height: 0, width: 0, overflow: "hidden",}}>
+    I'm pretty sure I said there are no vulnerabilities. Why are you in inspect element?
+    </span>
       <section className="container mx-auto px-6 py-16">
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center justify-between mb-12">
@@ -28,6 +41,38 @@ const CV = () => {
             </Button>
           </div>
 
+          {/* Skills & Certifications */}
+          <div  className="mb-12">
+            <div className="flex items-center gap-3 mb-6">
+              <Award className="text-primary" size={28} />
+              <h2 className="text-3xl font-bold">Skills & Certifications</h2>
+            </div>
+            
+            <div className="gradient-card rounded-2xl p-6 border border-border">
+              <div className="mb-6">
+                <h3 className="text-xl font-semibold mb-3">Technical Skills</h3>
+                <div className="flex flex-wrap gap-2">
+                  {['Social Engineering','Penetration Testing', 'Python', 'Burp Suite', 'Metasploit', 'Wireshark', 'Nmap', 
+                    'Linux', 'Bash Scripting', 'OWASP Top 10', 'Incident Response', 'Threat Hunting'].map((skill) => (
+                    <span
+                      key={skill}
+                      className="px-4 py-2 bg-secondary rounded-full text-secondary-foreground"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              
+              <div>
+                <h3 className="text-xl font-semibold mb-3">Certifications</h3>
+                <ul className="list-disc list-inside text-muted-foreground space-y-2">
+                  <li>Certified Penetration Testing Specialist (CPTS), ongoing</li>
+                  <li>Cisco cyberops associate, ongoing</li>
+                </ul>
+              </div>
+            </div>
+          </div>
           {/* Experience Section */}
           <div className="mb-12">
             <div className="flex items-center gap-3 mb-6">
@@ -177,38 +222,7 @@ const CV = () => {
             </div>
           </div>
 
-          {/* Skills & Certifications */}
-          <div>
-            <div className="flex items-center gap-3 mb-6">
-              <Award className="text-primary" size={28} />
-              <h2 className="text-3xl font-bold">Skills & Certifications</h2>
-            </div>
-            
-            <div className="gradient-card rounded-2xl p-6 border border-border">
-              <div className="mb-6">
-                <h3 className="text-xl font-semibold mb-3">Technical Skills</h3>
-                <div className="flex flex-wrap gap-2">
-                  {['Social Engineering','Penetration Testing', 'Python', 'Burp Suite', 'Metasploit', 'Wireshark', 'Nmap', 
-                    'Linux', 'Bash Scripting', 'OWASP Top 10', 'Incident Response', 'Threat Hunting'].map((skill) => (
-                    <span
-                      key={skill}
-                      className="px-4 py-2 bg-secondary rounded-full text-secondary-foreground"
-                    >
-                      {skill}
-                    </span>
-                  ))}
-                </div>
-              </div>
-              
-              <div>
-                <h3 className="text-xl font-semibold mb-3">Certifications</h3>
-                <ul className="list-disc list-inside text-muted-foreground space-y-2">
-                  <li>Certified Penetration Testing Specialist (CPTS), ongoing</li>
-                  <li>Cisco cyberops associate, ongoing</li>
-                </ul>
-              </div>
-            </div>
-          </div>
+
         </div>
       </section>
     </div>

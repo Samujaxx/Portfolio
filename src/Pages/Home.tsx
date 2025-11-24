@@ -1,10 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, ExternalLink, Gift } from "lucide-react";
 import profilePhoto from "@/assets/profile-photo.png";
+import Starfield from "../components/Starfield";
 
 const Home = () => {
   return (
     <div className="min-h-screen pt-24">
+      <Starfield />
       {/* Hero Section */}
       <section className="container mx-auto px-6 py-20">
         <div className="max-w-4xl mx-auto">
