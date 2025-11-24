@@ -17,12 +17,14 @@ const CV = () => {
             </div>
             
             <Button
-              variant="default"
               size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-glow"
+              className="flex items-center gap-2"
+              asChild
             >
-              <Download className="mr-2" size={20} />
-              Download PDF
+              <a href="public/cv.pdf" download>
+                <Download size={18} />
+                Download PDF
+              </a>
             </Button>
           </div>
 

@@ -10,7 +10,7 @@ const Navigation = () => {
             to="/" 
             className="text-xl font-bold text-foreground hover:text-primary transition-smooth"
           >
-            Portfolio
+            Ömer F. Uysal
           </NavLink>
           
           <div className="flex items-center gap-8">
