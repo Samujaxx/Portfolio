@@ -3,7 +3,18 @@ import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
 import Starfield from "../components/Starfield";
 
-const projects = [
+type Project = {
+  id: number;
+  title: string;
+  description: string;
+  image: string;
+  tags: string[];
+  githubUrl?: string;
+  liveUrl?: string;
+};
+
+
+const projects: Project[] = [
   {
     id: 1,
     title: "Cassper",
@@ -22,7 +33,7 @@ const projects = [
   }
 ];
 
-const Projects = () => {
+const Projects = () => {  
   return (
     <div className="min-h-screen pt-20">
       <Starfield />
