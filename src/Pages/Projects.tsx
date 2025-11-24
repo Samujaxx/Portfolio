@@ -5,57 +5,19 @@ import { ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "Network Scanner Pro",
-    description: "Advanced network reconnaissance tool with port scanning, service detection, and vulnerability mapping.",
+    title: "Cassper",
+    description: "Spyware that is made collaboratively for educational purposes and 1st year ADCS Coding project to demonstrate the risks of mobile malware.",
     image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=600&fit=crop",
-    tags: ["Python", "Nmap", "Security"],
-    liveUrl: "#",
-    githubUrl: "#"
+    tags: ["Python", "malware", "Security", "research"],
+    githubUrl: "https://github.com/LeonBoussen/Cassper"
   },
   {
     id: 2,
-    title: "Password Auditor",
-    description: "Enterprise password strength analyzer with breach detection and policy compliance checking.",
-    image: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=800&h=600&fit=crop",
-    tags: ["Python", "Cryptography", "Database"],
-    liveUrl: "#",
-    githubUrl: "#"
-  },
-  {
-    id: 3,
-    title: "Phishing Detection System",
-    description: "ML-powered phishing URL classifier with real-time threat intelligence integration.",
-    image: "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=800&h=600&fit=crop",
-    tags: ["Machine Learning", "Python", "API"],
-    liveUrl: "#",
-    githubUrl: "#"
-  },
-  {
-    id: 4,
-    title: "CTF Toolkit",
-    description: "Comprehensive suite of tools for Capture The Flag competitions including decoders and exploit scripts.",
-    image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&h=600&fit=crop",
-    tags: ["Python", "Bash", "Cryptography"],
-    liveUrl: "#",
-    githubUrl: "#"
-  },
-  {
-    id: 5,
-    title: "SIEM Dashboard",
-    description: "Security Information and Event Management dashboard with real-time log analysis and alerting.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
-    tags: ["ELK Stack", "Python", "Docker"],
-    liveUrl: "#",
-    githubUrl: "#"
-  },
-  {
-    id: 6,
-    title: "Vulnerability Scanner",
-    description: "Automated web application security scanner detecting OWASP Top 10 vulnerabilities.",
-    image: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=800&h=600&fit=crop",
-    tags: ["Python", "Burp Suite", "OWASP"],
-    liveUrl: "#",
-    githubUrl: "#"
+    title: "GifJet",
+    description: "a gif widget on your desktop to make your workspace more lively and fun. made with Python and monster energy.",
+    image: "src/assets/Gifjet.png",
+    tags: ["Python", "Widget", "Passion Project"],
+    githubUrl: "https://github.com/Samujaxx/GIFJet"
   }
 ];
 
@@ -69,7 +31,7 @@ const Projects = () => {
               My Projects
             </h1>
             <p className="text-xl text-muted-foreground">
-              Security tools, research projects, and things I've broken (then fixed)
+              Security tools, Research projects, Passion projects and things I've broken (then fixed)
             </p>
           </div>
 
@@ -77,8 +39,8 @@ const Projects = () => {
             {projects.map((project) => (
               <Card 
                 key={project.id} 
-                className="gradient-card border-border hover:border-primary transition-smooth group overflow-hidden"
-              >
+                className="gradient-card border-border hover:border-primary transition-smooth group overflow-hidden flex flex-col"
+                >
                 <div className="relative overflow-hidden">
                   <img
                     src={project.image}
@@ -97,7 +59,7 @@ const Projects = () => {
                   </CardDescription>
                 </CardHeader>
                 
-                <CardContent>
+                <CardContent className="flex flex-col flex-1">
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.tags.map((tag) => (
                       <span
@@ -108,32 +70,35 @@ const Projects = () => {
                       </span>
                     ))}
                   </div>
-                  
-                  <div className="flex gap-3">
-                    <Button
-                      variant="outline"
-                      size="sm"
-                      className="flex-1 border-primary text-primary hover:bg-primary/10"
-                      asChild
-                    >
-                      <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                        <ExternalLink size={16} className="mr-2" />
-                        Live Demo
-                      </a>
-                    </Button>
-                    
-                    <Button
-                      variant="outline"
-                      size="sm"
-                      className="flex-1"
-                      asChild
-                    >
-                      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                        <Github size={16} className="mr-2" />
-                        Code
-                      </a>
-                    </Button>
-                  </div>
+                    <div className="flex gap-3 mt-auto">
+                      {project.liveUrl && (
+                        <Button
+                          variant="outline"
+                          size="sm"
+                          className="flex-1 border-primary text-primary hover:bg-primary/10"
+                          asChild
+                        >
+                          <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                            <ExternalLink size={16} className="mr-2" />
+                            Live Demo
+                          </a>
+                        </Button>
+                      )}
+
+                      {project.githubUrl && (
+                        <Button
+                          variant="outline"
+                          size="sm"
+                          className="flex-1"
+                          asChild
+                        >
+                          <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                            <Github size={16} className="mr-2" />
+                            Code
+                          </a>
+                        </Button>
+                      )}
+                    </div>
                 </CardContent>
               </Card>
             ))}

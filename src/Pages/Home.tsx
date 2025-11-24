@@ -17,29 +17,29 @@ const Home = () => {
               />
               <div className="flex-1">
                 <h1 className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-primary to-cyan-300 bg-clip-text text-transparent">
-                  Your Name
+                  Ömer Faruk Uysal
                 </h1>
                 <p className="text-2xl text-muted-foreground mb-4">
-                  Cybersecurity Specialist & Ethical Hacker
+                  Cybersecurity Student & Ethical Hacker
                 </p>
               </div>
             </div>
             <p className="text-lg text-muted-foreground leading-relaxed mb-10 max-w-2xl">
-              Protecting digital assets and hunting vulnerabilities. Passionate about penetration testing,
-              threat analysis, and making the internet a safer place (one exploit at a time 🛡️).
+              Protecting digital assets and hunting vulnerabilities. Passionate about social engineering,
+              red teaming, and making the internet a safer place (one exploit at a time :D).
             </p>
             
             <div className="flex flex-wrap gap-4">
               <Button
-                variant="default"
-                size="lg"
-                className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-glow"
-                asChild
+                onClick={() => {
+                  document.getElementById("connect")?.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                  })
+                }}
               >
-                <a href="mailto:your.email@example.com">
-                  <Mail className="mr-2" size={20} />
-                  Get in Touch
-                </a>
+                <Mail size={18} />
+                Get in touch
               </Button>
               
               <Button
@@ -76,37 +76,36 @@ const Home = () => {
           <h2 className="text-3xl font-bold mb-8 text-foreground">About Me</h2>
           <div className="gradient-card rounded-2xl p-8 border border-border">
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              I'm a cybersecurity professional with expertise in penetration testing, threat hunting,
-              and incident response. My journey in security has equipped me with a diverse skill set
-              ranging from network security to application security and cloud infrastructure protection.
+              I'm a cybersecurity student with expertise in Social engineering, Penetration testing, Threat hunting,
+              and Incident response. My journey in security has equipped me with a diverse skill set
+              ranging from infrastructure security to application security.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
               When I'm not breaking things (ethically), you can find me at CTF competitions,
-              researching zero-days, contributing to security tools, or writing about the latest
-              vulnerabilities. Coffee ☕ and late-night debugging sessions are my jam.
+              researching zero-days, improving myself, or working on a random passion project. Monster energy (and techno) paired with late-night debugging sessions are my jam.
             </p>
           </div>
         </div>
       </section>
 
       {/* Connect Section */}
-      <section className="container mx-auto px-6 py-16 pb-24">
+      <section id="connect" className="container mx-auto px-6 py-16 pb-24">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold mb-8 text-foreground">Let's Connect</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/Samujaxx"
               target="_blank"
               rel="noopener noreferrer"
               className="gradient-card rounded-2xl p-6 border border-border hover:border-primary transition-smooth group"
             >
               <Github className="w-10 h-10 mb-4 text-primary group-hover:scale-110 transition-smooth" />
               <h3 className="text-xl font-semibold mb-2">GitHub</h3>
-              <p className="text-muted-foreground">Check out my security tools</p>
+              <p className="text-muted-foreground">Check out my late night projects</p>
             </a>
             
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://linkedin.com/in/omer-faruk-uysal-b8108a239"
               target="_blank"
               rel="noopener noreferrer"
               className="gradient-card rounded-2xl p-6 border border-border hover:border-primary transition-smooth group"
@@ -117,7 +116,7 @@ const Home = () => {
             </a>
             
             <a
-              href="mailto:your.email@example.com"
+              href="mailto:o.f.uysal@outlook.com"
               className="gradient-card rounded-2xl p-6 border border-border hover:border-primary transition-smooth group"
             >
               <Mail className="w-10 h-10 mb-4 text-primary group-hover:scale-110 transition-smooth" />

@@ -37,45 +37,81 @@ const CV = () => {
               <div className="gradient-card rounded-2xl p-6 border border-border">
                 <div className="flex justify-between items-start mb-3">
                   <div>
-                    <h3 className="text-xl font-semibold">Senior Security Analyst</h3>
-                    <p className="text-primary">CyberSec Corp</p>
+                    <h3 className="text-xl font-semibold">IT Consultant</h3>
+                    <p className="text-primary">Student aan huis B.V.</p>
                   </div>
-                  <span className="text-muted-foreground">2022 - Present</span>
+                  <span className="text-muted-foreground">2025 - Present</span>
                 </div>
                 <ul className="list-disc list-inside text-muted-foreground space-y-2">
-                  <li>Led penetration testing engagements for Fortune 500 clients</li>
-                  <li>Discovered and responsibly disclosed 15+ critical vulnerabilities</li>
-                  <li>Implemented security automation reducing incident response time by 70%</li>
+                  <li>Provided onsite technical support for 20+ clients, including
+                      troubleshooting computer systems, networks, and digital
+                      devices</li>
+                  <li>Configured and resolved issues regarding hardware,
+                      software, and WiFi connections; implemented basic network
+                      security solutions and firewall settings to minimize risks.</li>
+                  <li> Educated clients on secure online practices, enhancing their
+                        data protection and privacy.</li>
+                  <li>
+                    Delivered customized solutions aligned with client needs,
+                    improving technical and communication skills.
+                  </li>
                 </ul>
               </div>
 
               <div className="gradient-card rounded-2xl p-6 border border-border">
                 <div className="flex justify-between items-start mb-3">
                   <div>
-                    <h3 className="text-xl font-semibold">Penetration Tester</h3>
-                    <p className="text-primary">SecureNet Solutions</p>
+                    <h3 className="text-xl font-semibold">Game Developer (Internship)</h3>
+                    <p className="text-primary">AD1100 (Formerly Dent Studios B.V.)</p>
                   </div>
-                  <span className="text-muted-foreground">2020 - 2022</span>
+                  <span className="text-muted-foreground">2022 - 2023</span>
                 </div>
                 <ul className="list-disc list-inside text-muted-foreground space-y-2">
-                  <li>Conducted web application and network penetration tests</li>
-                  <li>Developed custom exploit scripts and security tools</li>
-                  <li>Provided remediation guidance to development teams</li>
+                  <li>
+                    independently developed a Unity game,
+                    including both the graphics and the code under the guidance of Mr.
+                    Dotsenko as my final MBO assignment.
+                  </li>
+                  <li>
+                      Playable here:{" "}
+                      <a
+                        href="https://11000ad.itch.io/asteroidal"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-primary hover:text-accent underline underline-offset-4 transition-smooth"
+                      >
+                        Asteroidal
+                      </a>
+                    </li>
+                  <li>contributed to Covenant Project Zero, a 2.5D Unity game
+                      published on Steam, where I worked on gameplay mechanics and
+                      systems programming in C#.
+                  </li>
+                  <li>
+                    Steam Page:{" "}
+                    <a
+                      href="https://store.steampowered.com/app/2207500/Covenant_Project_Zero/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary hover:text-accent underline underline-offset-4 transition-smooth"
+                    >
+                      Covenant: Project Zero
+                    </a>
+                  </li>
                 </ul>
               </div>
 
               <div className="gradient-card rounded-2xl p-6 border border-border">
                 <div className="flex justify-between items-start mb-3">
                   <div>
-                    <h3 className="text-xl font-semibold">Security Analyst</h3>
-                    <p className="text-primary">Global Defense Systems</p>
+                    <h3 className="text-xl font-semibold">Web Developer (Internship)</h3>
+                    <p className="text-primary">compu-factory</p>
                   </div>
-                  <span className="text-muted-foreground">2018 - 2020</span>
+                  <span className="text-muted-foreground">2020 - 2021</span>
                 </div>
                 <ul className="list-disc list-inside text-muted-foreground space-y-2">
-                  <li>Monitored security events and performed incident response</li>
-                  <li>Analyzed malware and conducted threat intelligence research</li>
-                  <li>Created security policies and conducted security awareness training</li>
+                  <li>contributed to developing the internal inventory management system, helping streamline and digitize core business operations</li>
+                  <li>build the internal procurement and salesplatform.</li>
                 </ul>
               </div>
             </div>
@@ -87,18 +123,53 @@ const CV = () => {
               <GraduationCap className="text-primary" size={28} />
               <h2 className="text-3xl font-bold">Education</h2>
             </div>
-            
+
             <div className="space-y-6">
+              {/* 1. Cyber Security */}
               <div className="gradient-card rounded-2xl p-6 border border-border">
-                <div className="flex justify-between items-start mb-3">
+                <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-2 mb-3">
                   <div>
-                    <h3 className="text-xl font-semibold">Bachelor of Science in Cybersecurity</h3>
-                    <p className="text-primary">University Name</p>
+                    <h3 className="text-xl font-semibold">Cyber Security (Associate Degree)</h3>
+                    <p className="text-primary">Amsterdam University of Applied Sciences (AUAS/HvA)</p>
                   </div>
-                  <span className="text-muted-foreground">2014 - 2018</span>
+                  <span className="text-sm text-muted-foreground whitespace-nowrap">
+                    2024 - present
+                  </span>
                 </div>
                 <p className="text-muted-foreground">
-                  Graduated with honors. Focus on network security, cryptography, and ethical hacking.
+                  Focused on practical, hands-on security, including networking, penetration testing, and defensive security.
+                </p>
+              </div>
+
+              {/* 2. Software Engineering */}
+              <div className="gradient-card rounded-2xl p-6 border border-border">
+                <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-2 mb-3">
+                  <div>
+                    <h3 className="text-xl font-semibold">Software Engineering (Bachelor)</h3>
+                    <p className="text-primary">Amsterdam University of Applied Sciences (AUAS/HvA)</p>
+                  </div>
+                  <span className="text-sm text-muted-foreground whitespace-nowrap">
+                    2023 - 2024
+                  </span>
+                </div>
+                <p className="text-muted-foreground">
+                  Worked with TypeScript and PHP. Program not completed because I was looking for other aspirations.
+                </p>
+              </div>
+
+              {/* 3. MBO */}
+              <div className="gradient-card rounded-2xl p-6 border border-border">
+                <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-2 mb-3">
+                  <div>
+                    <h3 className="text-xl font-semibold">Software Development (MBO 4)</h3>
+                    <p className="text-primary">Nova College Zijlweg</p>
+                  </div>
+                  <span className="text-sm text-muted-foreground whitespace-nowrap">
+                    2020 - 2023
+                  </span>
+                </div>
+                <p className="text-muted-foreground">
+                  Completed with a specialization in C# .NET application development and PHP fullstack development.
                 </p>
               </div>
             </div>
@@ -115,8 +186,8 @@ const CV = () => {
               <div className="mb-6">
                 <h3 className="text-xl font-semibold mb-3">Technical Skills</h3>
                 <div className="flex flex-wrap gap-2">
-                  {['Penetration Testing', 'Python', 'Burp Suite', 'Metasploit', 'Wireshark', 'Nmap', 
-                    'Linux', 'Bash Scripting', 'OWASP Top 10', 'Cloud Security', 'Incident Response', 'Threat Hunting'].map((skill) => (
+                  {['Social Engineering','Penetration Testing', 'Python', 'Burp Suite', 'Metasploit', 'Wireshark', 'Nmap', 
+                    'Linux', 'Bash Scripting', 'OWASP Top 10', 'Incident Response', 'Threat Hunting'].map((skill) => (
                     <span
                       key={skill}
                       className="px-4 py-2 bg-secondary rounded-full text-secondary-foreground"
@@ -130,10 +201,8 @@ const CV = () => {
               <div>
                 <h3 className="text-xl font-semibold mb-3">Certifications</h3>
                 <ul className="list-disc list-inside text-muted-foreground space-y-2">
-                  <li>Offensive Security Certified Professional (OSCP)</li>
-                  <li>Certified Ethical Hacker (CEH)</li>
-                  <li>CompTIA Security+</li>
-                  <li>GIAC Security Essentials (GSEC)</li>
+                  <li>Certified Penetration Testing Specialist (CPTS), ongoing</li>
+                  <li>Cisco cyberops associate, ongoing</li>
                 </ul>
               </div>
             </div>
