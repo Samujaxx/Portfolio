@@ -8,7 +8,7 @@ const projects = [
     id: 1,
     title: "Cassper",
     description: "Spyware that is made collaboratively for educational purposes and 1st year ADCS Coding project to demonstrate the risks of mobile malware.",
-    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=600&fit=crop",
+    image: "src/assets/cassper.png",
     tags: ["Python", "malware", "Security", "research"],
     githubUrl: "https://github.com/LeonBoussen/Cassper"
   },
